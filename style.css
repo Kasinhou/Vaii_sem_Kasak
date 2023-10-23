@@ -1,3 +1,51 @@
 .offcanvas {
+    max-width: 80%;
     overflow-y: auto;
+    width: max-content;
 }
+
+.navbar {
+    /*
+    background-color: yellow;
+    */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/*.korenie {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}*/
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /*align-items: end;*//*flex-start*/
+}
+
+main {
+
+    margin-top: 5%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: end;*/
+}
+
+body {
+    background-color: lightslategray;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/*
+.dropdown {
+    white-space: nowrap;
+}
+*/
+

@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<header>
+<!--<header>
     <div class="px-3 py-2 text-bg-dark border-bottom">
 
         <div class="container d-flex flex-wrap justify-content-center">
@@ -64,25 +64,25 @@
 
 
             <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <!--<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>-->
+                &lt;!&ndash;<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>&ndash;&gt;
                 <i class="bi bi-award"></i>
                 NAZOV
             </a>
 
             <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                <!--<button type="button" class="btn btn-primary">SEARCH</button>-->
+                &lt;!&ndash;<button type="button" class="btn btn-primary">SEARCH</button>&ndash;&gt;
             </form>
-            <!--button search-->
+            &lt;!&ndash;button search&ndash;&gt;
 
             <div class="text-end">
                 <button type="button" class="btn btn-light text-dark me-2">Login</button>
-                <!--<button type="button" class="btn btn-primary">Sign-up</button>-->
+                &lt;!&ndash;<button type="button" class="btn btn-primary">Sign-up</button>&ndash;&gt;
             </div>
         </div>
 
     </div>
-</header>
+</header>-->
 
 <!---->
 <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
@@ -92,11 +92,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand" href="#">NAZOV STRANKY</a>
+        <!--<a class="navbar-brand" href="#">NAZOV STRANKY</a>-->
+        <h1 class="navbar-brand">RECEPTIKY</h1>
 
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">MENU</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <!--<div class="offcanvas-body">
@@ -126,73 +127,92 @@
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>-->
-            <div class="dropdown-menu d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="dark">
-                <form class="p-2 mb-2 bg-dark border-bottom border-dark">
-                    <label>
-                         <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Search...">
-                    </label>
-                </form>
-                <ul class="list-unstyled mb-0">
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-success rounded-circle p-1"></span>
-                        KUCHYNE
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="d-inline-block bg-primary rounded-circle p-1"></span>
-                        JEDLA
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-danger rounded-circle p-1"></span>
-                        TIPY
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
+            <div class="offcanvas-body">
+                <div>
+                    <div class="position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden" data-bs-theme="dark">
+                    <!--<div class="dropdown-menu d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="dark">-->
+                        <form class="p-2 mb-2 bg-dark border-bottom border-dark">
+                            <label>
+                                <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Search...">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="btn-group-vertical dropend" role="group" aria-label="Vertical button group">
+                    <ul class="list-unstyled mb-0">
+                        <!--<li class="dropdown dropend">
+                            <button class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>-->
+                        <li class="dropdown dropend">
+                            <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                            KUCHYNE
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
-                        O NAS
-                    </a></li>
-                </ul>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">mexicka</a></li>
+                                <li><a class="dropdown-item" href="#">cinska</a></li>
+                                <li><a class="dropdown-item" href="#">slovenska</a></li>
+                                <li><a class="dropdown-item" href="#">talianska</a></li>
+                                <li><a class="dropdown-item" href="#">indicka</a></li>
+                                <li><a class="dropdown-item" href="#">thajska</a></li>
+                                <li><a class="dropdown-item" href="#">nemecka</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                            JEDLA
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ranajky</a></li>
+                                <li><a class="dropdown-item" href="#">hlavne jedla</a></li>
+                                <li><a class="dropdown-item" href="#">polievky</a></li>
+                                <li><a class="dropdown-item" href="#">dezerty</a></li>
+                                <li><a class="dropdown-item" href="#">zdrave</a></li>
+                                <li><a class="dropdown-item" href="#">vecere</a></li>
+                            </ul>
+                        </li>
+                        <li><button type="button" class="btn text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                            TIPY
+                        </button></li>
+
+                        <li><button type="button" class="btn text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                            Ucet
+                        </button></li>
+                        <li><button type="button" class="btn text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                            O nas
+                        </button></li>
+                        <!--<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                            <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                            O NAS
+                        </a></li>-->
+                    </ul>
+                </div>
             </div>
         </div>
 
     </div>
 </nav>
+
+
+<main>
+    <div class="image-container">
+        <img class="jedloimage" src="images/food.jpg" alt="Kuchyne sveta">
+        <hr>
+    </div>
+</main>
 
 <footer class="d-flex flex-wrap  justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
@@ -203,8 +223,8 @@
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><!--<svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg>--><i class="bi bi-twitter-x"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><!--<svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg>--><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter-x"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
         <li class="ms-3"><a class="text-body-secondary" href="#"><!--<svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg>--><i class="bi bi-facebook"></i></a></li>
     </ul>
 </footer>
