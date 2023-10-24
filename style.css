@@ -33,6 +33,12 @@
     color: white;
 }
 
+/*.img-left {
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}*/
+
 
 
 .image-container {
@@ -41,6 +47,8 @@
     width: auto;
     /*align-items: end;*//*flex-start*/
 }
+
+
 
 main {
     margin-top: 5%;
