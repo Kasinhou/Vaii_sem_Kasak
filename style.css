@@ -49,6 +49,12 @@
 }
 
 
+.heart-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 
 main {
     margin-top: 5%;
