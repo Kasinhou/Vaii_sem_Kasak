@@ -51,7 +51,8 @@
 .btn-hover:hover {opacity: 1}
 
 .ingrediencie {
-    border-style: dashed;
+    border-left: 3px dashed black;
+    padding-left: 10px;
 }
 
 /*.img-left {
