@@ -33,6 +33,13 @@
     color: white;
 }
 
+.img-recept {
+    float: right;
+    width: 15rem;
+    height: 25rem;
+    opacity: 0.5;
+}
+
 /*.img-left {
     float: left;
     width: 50%;
