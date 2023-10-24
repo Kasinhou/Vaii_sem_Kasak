@@ -35,16 +35,13 @@
 
 .img-recept {
     float: right;
-    width: 15rem;
+    width: 20rem;
     height: 25rem;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .btn-hover {
     border: none;
-    /*
-    font-size: 16px;
-    margin: 4px 2px;*/
     font-size: 16px;
     margin: 2px;
     opacity: 0.6;
@@ -52,6 +49,10 @@
 }
 
 .btn-hover:hover {opacity: 1}
+
+.ingrediencie {
+    border-style: dashed;
+}
 
 /*.img-left {
     float: left;
