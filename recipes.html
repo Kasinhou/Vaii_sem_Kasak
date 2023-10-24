@@ -17,8 +17,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!--<a class="navbar-brand" href="#">NAZOV STRANKY</a> aasi skor login-->
-        <h2 class="navbar-brand vpravo-zarovnanie">RECEPTIKY</h2>
+        <div class="flex-shrink-0 dropstart ms-2 vpravo-zarovnanie profil">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item" href="#">Prihlásiť sa</a></li>
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Odhlásiť sa</a></li>
+            </ul>
+        </div>
 
         <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
             <div class="offcanvas-header">
@@ -45,13 +54,15 @@
                                 KUCHYNE
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">mexicka</a></li>
-                                <li><a class="dropdown-item" href="#">cinska</a></li>
-                                <li><a class="dropdown-item" href="#">slovenska</a></li>
-                                <li><a class="dropdown-item" href="#">talianska</a></li>
-                                <li><a class="dropdown-item" href="#">indicka</a></li>
-                                <li><a class="dropdown-item" href="#">thajska</a></li>
-                                <li><a class="dropdown-item" href="#">nemecka</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">mexická</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">čínska</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">slovenská</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">talianská</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">indická</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">grécka</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">španielska</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">francúzska</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">iné...</a></li>
                             </ul>
                         </li>
                         <li class="dropdown dropend">
@@ -60,12 +71,14 @@
                                 JEDLA
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">ranajky</a></li>
-                                <li><a class="dropdown-item" href="#">hlavne jedla</a></li>
-                                <li><a class="dropdown-item" href="#">polievky</a></li>
-                                <li><a class="dropdown-item" href="#">dezerty</a></li>
-                                <li><a class="dropdown-item" href="#">zdrave</a></li>
-                                <li><a class="dropdown-item" href="#">vecere</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">raňajky</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">hlavné jedlá</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">polievky</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">dezerty</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">zdravé</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">večere</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">vegánske</a></li>
+                                <li><a class="dropdown-item" href="recipes.html">iné...</a></li>
                             </ul>
                         </li>
                         <li>
@@ -112,43 +125,49 @@
 
 
 <main>
+
+
     <div>
-        <h1 class="vpravo-zarovnanie">
+        <h2 class="vpravo-zarovnanie">
             TYP RECEPTOV
-        </h1>
+        </h2>
+        <hr>
     </div>
 
-
-
-    <div class="row">
-        <div class="img-left">
-            <img src="images/cuisines.jpg" alt="miestna kuchyna">
-        </div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Niečo málo o type jedla
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <img src="images/cuisines.jpg" alt="miestna kuchyna">
+            </div>
+            <div class="col">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Niečo málo o type jedla
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Dodatočné informácie
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Dodatočné informácie
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -161,7 +180,7 @@
         <div class="row g-2">
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -180,7 +199,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -199,7 +218,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -218,7 +237,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -237,7 +256,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -256,7 +275,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -275,7 +294,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -294,7 +313,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -313,7 +332,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -332,7 +351,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
@@ -351,7 +370,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <img src="images/cuisines.jpg" class="card-img-top" alt="Konkretny recept">
+                    <img src="images/cookie.jpg" class="card-img-top" alt="Konkretny recept">
                     <div class="card-body">
                         <h5 class="card-title">Názov receptu</h5>
                         <p class="card-text">Krátka veta o jedle, na zaujatie používateľa.</p>
