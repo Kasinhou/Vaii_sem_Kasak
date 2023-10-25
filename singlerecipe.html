@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!--navbar-->
 <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
     <div class="container-fluid">
 
@@ -113,11 +115,13 @@
     </div>
 </nav>
 
+
+<!--postup pripravy receptu, ingrediecie, info-->
 <main>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <h3>Cookies</h3>
+            <div class="col-12 col-lg-6">
+                <h3 class="bold">Cookies</h3>
                 <br>
                 <div>
                     <i class="bi bi-question-circle"></i> Obtiažnosť
@@ -129,7 +133,7 @@
                     <i class="bi bi-globe-americas"></i> Pôvod jedla
                 </div><br>
 
-                <h5>Ingrediencie</h5>
+                <h5 class="bold">Ingrediencie</h5>
                 <p class="ingrediencie">180 g polohrubá múka<br>
                     130 g práškový cukor<br>
                     125 g maslo<br>
@@ -140,23 +144,19 @@
                 </p>
                 <br>
 
-
-
-
                 <button type="button" class="btn btn-sm btn-danger">
                     <i class="bi bi-heart"></i> Uložiť do obľúbených receptov
-                </button>
-
+                </button><br>
 
             </div>
-            <div class="col">
-                <img class="img-recept" src="images/cookie.jpg" alt="nahlad receptu">
+            <div class="col-12 col-lg-6">
+                <br><img class="image-container img-recept" src="images/cookie.jpg" alt="nahlad receptu">
             </div>
         </div><br><hr>
 
         <div class="row">
             <div class="col">
-                <h5>Postup prípravy</h5>
+                <h5 class="bold">Postup prípravy</h5>
             </div>
             <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Fusce eget est dignissim, varius tellus sit amet, finibus orci.
@@ -179,7 +179,7 @@
 </main>
 
 
-
+<!--paticka-->
 <footer class="d-flex flex-wrap  justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center rec-f">
         <span class="mb-3 mb-md-0 text-body-secondary">Receptiky</span>

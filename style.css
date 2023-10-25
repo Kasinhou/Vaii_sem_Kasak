@@ -1,6 +1,12 @@
 .offcanvas {
     overflow-y: auto;
-    width: 25% !important;
+    width: 20% !important;
+}
+
+@media screen and (max-width: 992px){
+    .offcanvas {
+        width: 200px !important;
+    }
 }
 
 .navbar {
@@ -41,12 +47,6 @@
     color: white;
 }
 
-.img-recept {
-    float: right;
-    width: 20rem;
-    height: 25rem;
-}
-
 /*hover prevzaty z bootstrapu*/
 .btn-hover {
     border: none;
@@ -69,6 +69,11 @@
     width: auto;
 }
 
+.img-recept {
+    width: 20rem;
+    height: 25rem;
+}
+
 
 .heart-right {
     position: absolute;
@@ -80,7 +85,7 @@
 
 
 main {
-    margin-top: 5%;
+    margin-top: 75px;
 }
 
 html, body {
@@ -88,9 +93,22 @@ html, body {
     margin: 0;
     font-family: Helvetica, "Roboto Light", sans-serif;
 }
+@media print {
+    body {
+        font-family: serif;
+    }
+}
 
 * {
     box-sizing: border-box;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .bg-image {
@@ -145,6 +163,29 @@ html, body {
     padding: 20px;
     text-align: left;
     left: 60%;
+}
+
+@media screen and (max-width: 900px) {
+    .bg-text {
+        font-size: 40px;
+    }
+    .bg-text-secondary {
+        font-size: 20px;
+    }
+    .bg-text-secondary-smaller {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bg-text {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    .bg-text-secondary {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .bg-text-secondary-smaller {
