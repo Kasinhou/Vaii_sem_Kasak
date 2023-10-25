@@ -13,6 +13,11 @@
 
 }
 
+/*
+.dropdown {
+    white-space: nowrap;
+}
+*/
 .vpravo-zarovnanie {
     display: flex;
     justify-content: flex-end;
@@ -37,7 +42,6 @@
     float: right;
     width: 20rem;
     height: 25rem;
-    /*opacity: 0.5;*/
 }
 
 .btn-hover {
@@ -55,17 +59,10 @@
     padding-left: 10px;
 }
 
-/*.img-left {
-    float: left;
-    width: 50%;
-    margin-left: 5%;
-}*/
-
 .image-container {
     display: flex;
     flex-direction: column;
     width: auto;
-    /*align-items: end;*//*flex-start*/
 }
 
 
@@ -102,6 +99,16 @@ html, body {
 .img2 { background-image: url("images/iran.jpg"); }
 .img3 { background-image: url("images/soups.jpg"); }
 .img4 { background-image: url("images/rootsy.jpg"); }
+.img5 { background-image: url("images/indonesia.jpg"); }
+.img6 { background-image: url("images/iran.jpg"); }
+.img7 { background-image: url("images/soups.jpg"); }
+.img8 { background-image: url("images/rootsy.jpg"); }
+.img9 { background-image: url("images/indonesia.jpg"); }
+.img10 { background-image: url("images/iran.jpg"); }
+.img11 { background-image: url("images/soups.jpg"); }
+.img12 { background-image: url("images/rootsy.jpg"); }
+.img13 { background-image: url("images/indonesia.jpg"); }
+.img14 { background-image: url("images/iran.jpg"); }
 
 .bg-text {
     background-color: rgb(0,0,0);
@@ -150,10 +157,3 @@ body {
 footer {
     margin-top: auto;
 }
-
-/*
-.dropdown {
-    white-space: nowrap;
-}
-*/
-
